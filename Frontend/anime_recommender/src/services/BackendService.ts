@@ -19,9 +19,12 @@ export interface AnimeRecommendationResponse {
    };
 }
 
+// Get API URL from environment variable or default to localhost
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
 export const backendService = {
 
     getAnimeRecommendations: async (payload: Payload) => {
-        return await apiClient.post("http://localhost:8000/chat/recommender", payload);
+        return await apiClient.post(`${API_BASE_URL}/chat/recommender`, payload);
     }
 }
