@@ -1,0 +1,11 @@
+2025-11-20 23:25:45 [INFO] ai_anime_recommender.AnimeRecommendationTool - Launching LangChain tool for query='nice binge watch anime' (top_k=3).
+2025-11-20 23:25:45 [INFO] ai_anime_recommender.PipelineBuilder - Building pipeline with csv='/home/thecoder30ec4/Documents/AI Anime Recommender/Backend/data/anime_with_synopsis.csv', processed='/home/thecoder30ec4/Documents/AI Anime Recommender/Backend/data/anime_with_synopsis_processed.csv', persist_dir='/home/thecoder30ec4/Documents/AI Anime Recommender/Backend/VectorDataBase/chromaDB', top_k=3.
+2025-11-20 23:25:45 [INFO] ai_anime_recommender.AnimeRecommendationPipeline - Executing recommendation pipeline for query='nice binge watch anime'.
+2025-11-20 23:25:45 [INFO] ai_anime_recommender.data_loader - Loading anime data from '/home/thecoder30ec4/Documents/AI Anime Recommender/Backend/data/anime_with_synopsis.csv'.
+2025-11-20 23:25:45 [INFO] ai_anime_recommender.data_loader - Processed 269 anime records into '/home/thecoder30ec4/Documents/AI Anime Recommender/Backend/data/anime_with_synopsis_processed.csv'.
+2025-11-20 23:25:45 [INFO] ai_anime_recommender.Recommender - Running retrieval for query='nice binge watch anime' with top_k=3.
+2025-11-20 23:25:45 [INFO] ai_anime_recommender.src.vector_store - Preparing vector store at '/home/thecoder30ec4/Documents/AI Anime Recommender/Backend/VectorDataBase/chromaDB' (force_rebuild=False).
+2025-11-20 23:25:45 [INFO] ai_anime_recommender.src.vector_store - Vector store already exists; skipping rebuild.
+2025-11-20 23:25:45 [INFO] ai_anime_recommender.config.llm - Loading HuggingFace embeddings model 'all-MiniLM-L6-v2' on device 'cpu'.
+2025-11-20 23:25:55 [INFO] ai_anime_recommender.Recommender - Retrieved 3 candidate results.
+2025-11-20 23:25:55 [INFO] ai_anime_recommender.AnimeRecommendationPipeline - Pipeline completed with 3 results.
